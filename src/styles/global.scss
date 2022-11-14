@@ -1,6 +1,12 @@
 @import './reset';
 @import './variables';
 
+html * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
 body {
-	background-color: #0b1c12;
+	background-color: $yellow-1;
 }
