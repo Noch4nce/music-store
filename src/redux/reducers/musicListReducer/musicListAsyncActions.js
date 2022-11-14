@@ -6,7 +6,7 @@ export const fetchMusicListData = createAsyncThunk(
 	async () => {
 		try {
 			const response = await axios.get(
-				'https://6371f8bc025414c6370292a2.mockapi.io/items'
+				'https://6371f8bc025414c6370292a2.mockapi.io/items?page=1&limit=5'
 			)
 			console.log(response.data, 'MUSIC DATA')
 
