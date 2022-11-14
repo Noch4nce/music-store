@@ -12,8 +12,6 @@ const MainMusicList = () => {
 		dispatch(fetchMusicListData())
 	}, [])
 
-	console.log(musicListData, 'musicListData')
-
 	return (
 		<div>
 			<MusicBlock />
