@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 
+import { fetchMusicListData } from './redux/reducers/musicListReducer/musicListAsyncActions'
 import MainLayout from './layouts/MainLayout'
 import './styles/global.scss'
-import { useDispatch, useSelector } from 'react-redux'
-import { fetchMusicListData } from './redux/reducers/musicListReducer/musicListSlice'
 
 const App = () => {
 	const dispatch = useDispatch()
@@ -15,9 +15,7 @@ const App = () => {
 
 	return (
 		<div>
-			<MainLayout>
-				Card
-			</MainLayout>
+			<MainLayout>Card</MainLayout>
 		</div>
 	)
 }
