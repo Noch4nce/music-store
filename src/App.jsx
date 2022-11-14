@@ -1,21 +1,15 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import React from 'react'
 
-import { fetchMusicListData } from './redux/reducers/musicListReducer/musicListAsyncActions'
 import MainLayout from './layouts/MainLayout'
+import MainMusicList from './components/MainContent/MainMusicList'
 import './styles/global.scss'
 
 const App = () => {
-	const dispatch = useDispatch()
-
-	useEffect(() => {
-		console.log('wwww')
-		dispatch(fetchMusicListData())
-	}, [])
-
 	return (
 		<div>
-			<MainLayout>Card</MainLayout>
+			<MainLayout>
+				<MainMusicList />
+			</MainLayout>
 		</div>
 	)
 }
