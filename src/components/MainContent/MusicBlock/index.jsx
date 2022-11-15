@@ -1,7 +1,7 @@
 import React from 'react'
 
 import albumCoverImage from '../../../assets/album-covers/daft-punk_random-access-memories.jpg'
-import NormalizeNumber from './NormalizeNumber/NormalizeNumber'
+import NormalizeNumber from './NormalizeNumber'
 import { normalizeNumbers } from '../../../utils/normalizeNumbers'
 import styles from './styles.module.scss'
 

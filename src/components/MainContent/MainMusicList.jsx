@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import MusicBlock from './MusicBlock/MusicBlock'
+import MusicBlock from './MusicBlock'
 import { fetchMusicListData } from '../../redux/reducers/musicListReducer/musicListAsyncActions'
 
 const MainMusicList = () => {
