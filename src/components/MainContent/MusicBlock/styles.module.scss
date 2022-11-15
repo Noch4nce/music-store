@@ -1,0 +1,85 @@
+@import './src/styles/variables';
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 950px;
+	margin: 0 auto 68px;
+	border-bottom: 2px solid $red;
+
+	&:first-child {
+		padding-top: 68px;
+	}
+
+	.album {
+		display: flex;
+
+		img {
+			width: 110px;
+			border: 2px solid $red;
+			border-bottom-width: 0;
+		}
+
+		.albumInfo {
+			display: flex;
+			flex-direction: column;
+			padding: 8px 16px;
+
+			h2 {
+				color: $dark;
+				font-weight: 600;
+				font-size: $font-size-xxl;
+				line-height: 24px;
+			}
+
+			.artistName {
+				color: $dark;
+				font-weight: 600;
+				font-size: $font-size-l;
+				line-height: 18px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.albumIndex {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		padding: 8px 0;
+
+		.rating {
+			margin-bottom: 10px;
+		}
+
+		.price {
+			margin-bottom: 18px;
+		}
+
+		.integer {
+			font-size: $font-size-xxl;
+		}
+
+		button {
+			color: $dark;
+			font-weight: 400;
+			font-size: $font-size-l;
+			line-height: 16px;
+			background-color: $yellow-3;
+			border: 1px solid $dark;
+			border-radius: 14px;
+			padding: 6px 20px;
+			cursor: pointer;
+
+			&:hover {
+				box-shadow: 0 0 5px 2px rgba(72, 55, 57, 0.33);
+			}
+
+			&:active {
+				color: $red;
+				border: 1px solid $red;
+				box-shadow: 0 0 5px 2px rgba(208, 49, 95, 0.33);
+			}
+		}
+	}
+}
