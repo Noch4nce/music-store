@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import MusicBlock from './MusicBlock'
+import MusicBlock from './MusicBlock/MusicBlock'
 import { fetchMusicListData } from '../../redux/reducers/musicListReducer/musicListAsyncActions'
 
 const MainMusicList = () => {
@@ -14,7 +14,16 @@ const MainMusicList = () => {
 
 	return (
 		<div>
-			<MusicBlock />
+			{musicListData.length ? (
+				musicListData.map((musicElement) => (
+					<MusicBlock
+						key={musicElement.id}
+						musicElement={musicElement}
+					/>
+				))
+			) : (
+				<h1>Loading...</h1>
+			)}
 		</div>
 	)
 }
